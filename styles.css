@@ -1,7 +1,12 @@
-.main {
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
+  height: 100vh;
 }
 
 #name {
