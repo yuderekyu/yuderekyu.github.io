@@ -1,4 +1,4 @@
-.app {
+.main {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
@@ -7,6 +7,10 @@
 #name {
   font-family: 'Courgette', serif;
   font-size: 3rem;
+}
+
+.header {
+  font-family: 'Montserrat', serif;
 }
 
 .list {
@@ -24,4 +28,8 @@
 .category-link {
   color: black;
   text-decoration: none;
+}
+
+.paragraph {
+  font-family: 'Chivo', serif;
 }
