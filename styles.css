@@ -17,11 +17,11 @@ html {
 #name {
   font-family: 'Courgette', serif;
   font-size: 3rem;
+  margin-right: 1rem;
 }
 
 .extension {
   height: 3rem;
-  margin-left: 1rem;
   width: 3rem;
 }
 
