@@ -19,7 +19,6 @@ html {
 }
 
 .list {
-  font-family: 'Montserrat', sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,9 +29,20 @@ html {
   margin: 0.2rem;
 }
 
-.category-link {
+.link {
   color: black;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+}
+
+.home {
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+  position: fixed;
+  right: 0.625rem;
+  padding: 0.25rem;
+  bottom: 0.625rem;
 }
 
 .blurb {
