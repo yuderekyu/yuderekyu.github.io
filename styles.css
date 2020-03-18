@@ -32,9 +32,6 @@ html {
   background-color: lightslategray;
 }
 
-.extension:active:hover {
-  background-color: darkred;
-}
 .header {
   font-family: 'Montserrat', serif;
 }
@@ -60,10 +57,6 @@ html {
   color: lightslategray;
 }
 
-.link:active:hover {
-  color: darkred;
-}
-
 .blurb {
   font-family: 'Montserrat', sans-serif;
   margin-right: 1rem;
@@ -82,10 +75,5 @@ html {
 
 .home:hover {
   background-color: lightslategray;
-  color: white;
-}
-
-.home:active:hover {
-  background-color: darkred;
   color: white;
 }
