@@ -77,3 +77,21 @@ html {
   background-color: lightslategray;
   color: white;
 }
+
+
+// Mobile devices do not support hovering. To stop these hover styles from becoming sticky
+// revert to default styles on devices that do not support hover.
+@media (hover: none) {
+  .extension:hover {
+    color: black;
+  }
+
+  .link:hover {
+    color: black;
+  }
+
+  .home:hover {
+    background-color: white;
+    color: black;
+  }
+}
