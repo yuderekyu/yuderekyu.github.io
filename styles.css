@@ -28,10 +28,6 @@ html {
   width: 3rem;
 }
 
-.extension:hover {
-  opacity: 0.75;
-}
-
 .header {
   font-family: 'Montserrat', serif;
 }
@@ -53,10 +49,6 @@ html {
   text-decoration: none;
 }
 
-.link:hover {
-  color: lightslategray;
-}
-
 .blurb {
   font-family: 'Montserrat', sans-serif;
   margin-right: 1rem;
@@ -73,25 +65,18 @@ html {
   bottom: 0.625rem;
 }
 
-.home:hover {
-  background-color: lightslategray;
-  color: white;
-}
-
-
-// Mobile devices do not support hovering. To stop these hover styles from becoming sticky
-// revert to default styles on devices that do not support hover.
-@media (hover: none) {
+// Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices.
+@media (hover: hover) {
   .extension:hover {
-    color: black;
+    opacity: 0.75;
   }
 
   .link:hover {
-    color: black;
+    color: lightslategray;
   }
 
   .home:hover {
-    background-color: white;
-    color: black;
+    background-color: lightslategray;
+    color: white;
   }
 }
