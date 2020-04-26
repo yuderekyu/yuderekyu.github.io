@@ -65,7 +65,7 @@ html {
   bottom: 0.625rem;
 }
 
-// Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices.
+/* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .extension:hover {
     opacity: 0.75;
