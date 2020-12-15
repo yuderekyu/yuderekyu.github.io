@@ -49,11 +49,16 @@ html {
   margin-left: 1rem;
 }
 
-#picture {
+.profile-picture {
   box-shadow: 6px 6px 1px 1px pink;
   border-radius: 25px;
   height: 14rem;
   width: 21rem;
+}
+
+.book-cover {
+  height: 12.29rem;
+  width: 8rem;
 }
 
 .home {
