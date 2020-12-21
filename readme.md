@@ -1,2 +1,2 @@
 # yuderekyu.github.io
-welcome. this serves as my outlet to experiment, think out loud, and stamp memories.
+Personal site. Expect experimentation and some self-loving.
