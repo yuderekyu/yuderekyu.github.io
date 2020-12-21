@@ -43,10 +43,10 @@ html {
   text-decoration: none;
 }
 
-.blurb {
+.text-block {
   font-family: 'Montserrat', sans-serif;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
 }
 
 .profile-picture {
