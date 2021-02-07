@@ -1,0 +1,22 @@
+{
+  "name": "yuderekyu.github.io",
+  "version": "0.0.0",
+  "description": "Derek Yu's personal site.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuderekyu/yuderekyu.github.io.git"
+  },
+  "author": "Derek Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuderekyu/yuderekyu.github.io/issues"
+  },
+  "homepage": "https://github.com/yuderekyu/yuderekyu.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
