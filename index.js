@@ -4,11 +4,20 @@
  * @param {} entries
  * @param {} observer
  */
-const animationObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    entry.target.classList.toggle('animate', entry.isIntersecting);
-  });
-}, { threshold: 0.5 });
+// const animationObserver = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     entry.target.classList.toggle('animate', entry.isIntersecting);
+//   });
+// }, { threshold: 0.5 });
 
-const homeButton = document.querySelector('.home');
-animationObserver.observe(homeButton);
+// const homeButton = document.querySelector('.home');
+// animationObserver.observe(homeButton);
+
+// const fixedObserver = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     entry.target.classList.toggle('fixed', entry.isIntersecting);
+//   });
+// }, { threshold: 0.5 });
+
+// const navList = document.querySelector('.nav-list');
+// fixedObserver.observe(navList);
