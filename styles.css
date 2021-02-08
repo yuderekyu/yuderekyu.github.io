@@ -44,6 +44,10 @@
   text-decoration: none;
 }
 
+.title-page {
+  justify-content: center;
+}
+
 .page {
   align-items: center;
   display: flex;
@@ -54,7 +58,7 @@
 #name {
   font-family: 'Courgette', serif;
   font-size: 4.5rem;
-  margin: 4rem 1rem 0 1rem;
+  margin: 0 1rem 3rem 1rem;
 }
 
 .divider {
@@ -70,7 +74,7 @@
 
 .text-block {
   font-family: 'Montserrat', sans-serif;
-  margin: 1rem 3rem 1rem 3rem;
+  margin: 0 3rem 1rem 3rem;
 }
 
 .book-cover {
