@@ -51,7 +51,7 @@
   height: 100vh;
 }
 
-.page, .title{
+.page.title{
   justify-content: center;
 }
 
@@ -77,7 +77,7 @@
   width: 10rem;
 }
 
-.link, .book{
+.link.book{
   z-index: -1;
 }
 
