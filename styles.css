@@ -16,12 +16,6 @@
   width: 100%;
 }
 
-.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .nav .item {
   cursor: pointer;
   list-style-type: none;
