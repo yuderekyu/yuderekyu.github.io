@@ -4,11 +4,16 @@
  * @param {} entries
  * @param {} observer
  */
-const animationObserver = new IntersectionObserver((entries, observer) => {
+const callback = (entries, observer) => {
   entries.forEach(entry => {
-    entry.target.classList.toggle('animate', entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+      observer.unobserve(entry.target);
+    }
   });
-}, { threshold: 0.5 });
+};
+
+const animationObserver = new IntersectionObserver(callback, { threshold: 0.3 });
 
 const bookCover = document.querySelector('.book-cover');
 animationObserver.observe(bookCover);
