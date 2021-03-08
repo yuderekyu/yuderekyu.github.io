@@ -13,7 +13,6 @@ const callback = (entries, observer) => {
   });
 };
 
-const animationObserver = new IntersectionObserver(callback, { threshold: 0.3 });
-
+const animationObserver = new IntersectionObserver(callback, { threshold: 0.5 });
 const bookCover = document.querySelector('.book-cover');
 animationObserver.observe(bookCover);
