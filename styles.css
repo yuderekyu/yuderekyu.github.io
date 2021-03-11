@@ -71,10 +71,6 @@
   width: 10rem;
 }
 
-.link.book{
-  z-index: -1;
-}
-
 /* Note: opacity < 1 creates a new stacking context. */
 .book-cover {
   opacity: 0;
@@ -105,8 +101,7 @@
     color: lightslategray;
   }
 
-  .home:hover {
-    background-color: lightslategray;
-    color: white;
+  .link.book:hover {
+    box-shadow: 1px 1px 8px 0 rgb(0 0 0 / 10%);
   }
 }
