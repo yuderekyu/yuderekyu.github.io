@@ -1,3 +1,5 @@
+import './styles.css';
+
 /**
  * Toggle a css class based on visibility in viewport.
  * Inspiration: https://github.blog/2021-01-29-making-githubs-new-homepage-fast-and-performant/
