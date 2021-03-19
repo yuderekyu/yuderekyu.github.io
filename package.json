@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/yuderekyu/yuderekyu.github.io#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "css-loader": "^5.1.2",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.25.1",
     "webpack-cli": "^4.5.0"

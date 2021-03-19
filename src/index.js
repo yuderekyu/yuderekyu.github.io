@@ -1,4 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './styles.css';
+import App from './App';
 
 /**
  * Toggle a css class based on visibility in viewport.
@@ -18,3 +21,5 @@ const callback = (entries, observer) => {
 const animationObserver = new IntersectionObserver(callback, { threshold: 0.5 });
 const bookCover = document.querySelector('.book-cover');
 animationObserver.observe(bookCover);
+
+ReactDOM.render(<App />, document.getElementById('root'));
