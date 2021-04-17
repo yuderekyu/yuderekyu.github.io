@@ -69,7 +69,7 @@
 .divider {
   border: 1px solid olive;
   margin-top: 1rem;
-  width: 10rem;
+  width: 22rem;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
