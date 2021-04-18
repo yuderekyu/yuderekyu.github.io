@@ -24,13 +24,12 @@
 }
 
 .nav .link {
-  color: white;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
 
 .nav .link:visited {
-  color: white;
+  color: black;
 }
 
 .link {
@@ -62,7 +61,7 @@
 }
 
 #name {
-  color: #259494;
+  color: #258282;
   font-family: 'Courgette', serif;
   font-size: 5.5rem;
   margin: 0 1rem 3rem 1rem;
