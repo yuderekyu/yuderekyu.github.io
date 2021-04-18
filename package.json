@@ -16,7 +16,7 @@
     "url": "https://github.com/yuderekyu/yuderekyu.github.io/issues"
   },
   "homepage": "https://github.com/yuderekyu/yuderekyu.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
     "express": "^4.17.1"
   }
 }
