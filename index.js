@@ -11,8 +11,10 @@ const callback = (entries, observer) => {
   });
 };
 
-const animationObserver = new IntersectionObserver(callback, { threshold: 0.5 });
-const bookCover = document.querySelector('.book-cover');
-animationObserver.observe(bookCover);
-const name = document.querySelector('.name');
-animationObserver.observe(name);
+const animatePage = (observerCallback, observerOptions) => {
+  const animationObserver = new IntersectionObserver(observerCallback, observerOptions);
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => animationObserver.observe(page));
+};
+
+animatePage(callback, { threshold: 0.5 });
