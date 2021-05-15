@@ -1,4 +1,7 @@
 /* Styles follow dom element order. */
+html {
+  scroll-behavior: smooth;
+}
 
 .body {
   background-color: #eadac3;
@@ -66,7 +69,7 @@
 .profile-pic {
   border: 2px rgb(175, 78, 139, 1) solid;
   border-radius: 10px;
-  max-width: 25rem;
+  max-width: 22rem;
   margin-bottom: 1.5rem;
 }
 
