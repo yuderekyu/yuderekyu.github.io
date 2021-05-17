@@ -76,8 +76,9 @@ html {
 .name {
   color: #258282;
   font-family: 'Courgette', serif;
-  font-size: 5.5rem;
+  font-size: 7rem;
   margin: 0 1rem 2rem 1rem;
+  text-align: center;
 }
 
 .divider {
