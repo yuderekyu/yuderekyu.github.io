@@ -17,4 +17,4 @@ const animatePage = (observerCallback, observerOptions) => {
   pages.forEach(page => animationObserver.observe(page));
 };
 
-animatePage(callback, { threshold: 0.5 });
+animatePage(callback, { threshold: 0.45 });

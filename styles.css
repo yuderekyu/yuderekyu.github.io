@@ -53,6 +53,7 @@ html {
   display: flex;
   flex-flow: column;
   height: 100vh;
+  margin-bottom: 2rem;
   opacity: 0;
 }
 
@@ -65,7 +66,7 @@ html {
   border-radius: 1rem;
   font-family: 'Montserrat', serif;
   font-size: 3rem;
-  padding: 1rem
+  padding: 1.5rem
 }
 
 .page .text-block {
@@ -73,7 +74,7 @@ html {
   border-radius: 1rem;
   font-family: 'Montserrat', sans-serif;
   margin: 0 3rem 1rem 3rem;
-  padding: 0.9rem;
+  padding: 1.5rem;
   max-width: 40rem;
 }
 
@@ -91,14 +92,13 @@ html {
   border-radius: 1rem;
   font-family: 'Courgette', serif;
   font-size: 6rem;
-  margin: 30px 1rem 2rem 1rem;
-  padding: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
 .divider {
   border: 1px solid white;
-  margin-top: 1rem;
   width: 75%;
 }
 
@@ -114,7 +114,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .link.book {
@@ -129,9 +129,8 @@ html {
 }
 
 .video {
-  border: none;
+  border: 5px white solid;
   border-radius: 1rem;
-  margin: 0 0 2rem 0;
 }
 
 .animate {
