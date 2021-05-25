@@ -81,7 +81,7 @@ html {
   background-color: white;
   border: 2px white solid;
   border-radius: 1rem;
-  max-width: 22rem;
+  max-width: 20rem;
   margin-bottom: 1.5rem;
 }
 
@@ -91,7 +91,7 @@ html {
   border-radius: 1rem;
   font-family: 'Courgette', serif;
   font-size: 6rem;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 30px 1rem 2rem 1rem;
   padding: 1rem;
   text-align: center;
 }
@@ -114,7 +114,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  padding: 0.90rem;
+  padding: 1rem;
 }
 
 .link.book {
@@ -129,6 +129,8 @@ html {
 }
 
 .video {
+  border: none;
+  border-radius: 1rem;
   margin: 0 0 2rem 0;
 }
 
