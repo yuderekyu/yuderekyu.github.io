@@ -34,6 +34,7 @@ html {
 
 .nav .link {
   border-radius: 0;
+  color: white;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
