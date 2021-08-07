@@ -81,7 +81,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   margin: 0 3rem 1rem 3rem;
   padding: 1.75rem;
-  max-width: 35rem;
+  max-width: 38rem;
 }
 
 .profile-pic {
@@ -119,8 +119,13 @@ html {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  padding: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.review-header {
+  font-size: 1.15rem;
+  margin: 0;
 }
 
 .link.book {
