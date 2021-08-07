@@ -18,3 +18,19 @@ const animatePage = (observerCallback, observerOptions) => {
 };
 
 animatePage(callback, { threshold: 0.45 });
+
+/**
+ * Show and hide navigation on scroll.
+ */
+let previousScrollY = window.scrollY;
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+  const navList = document.querySelector('.nav .list');
+  if (currentScrollY > previousScrollY) {
+    navList.classList.add('hide');
+  } else {
+    navList.classList.remove('hide');
+  }
+
+  previousScrollY = currentScrollY;
+});
