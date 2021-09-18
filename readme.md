@@ -5,6 +5,7 @@ My personal site!
 
 Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their readme instructions.
 
+### Installation
 Ensure node version v14 is installed:
 ```sh
 nvm install 14
@@ -20,6 +21,7 @@ Install dependencies:
 npm install
 ```
 
+### Development
 Start the server:
 ```sh
 npm start
