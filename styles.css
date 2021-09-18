@@ -17,7 +17,7 @@ html {
   margin: 0;
   position: fixed;
   padding: 0;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.15s ease-out;
   width: 100%;
   z-index: 1;
 }
@@ -88,8 +88,8 @@ html {
   background-color: white;
   border: 2px white solid;
   border-radius: 1rem;
-  max-width: 20rem;
-  margin-bottom: 1.5rem;
+  width: 21rem;
+  margin-bottom: 1rem;
 }
 
 .name {
@@ -97,8 +97,8 @@ html {
   background-color: white;
   border-radius: 1rem;
   font-family: 'Courgette', serif;
-  font-size: 6rem;
-  margin: 2rem 1rem 2rem 1rem;
+  font-size: 7rem;
+  margin: 0 1rem 1rem 1rem;
   padding: 2rem;
   text-align: center;
 }
@@ -148,6 +148,23 @@ html {
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
+
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: 6rem;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+
+  .profile-pic {
+    width: 16rem;
+  }
+
+  .page .text-block {
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+
 
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
