@@ -20,17 +20,15 @@ const animatePage = (observerCallback, observerOptions) => {
 animatePage(callback, { threshold: 0.45 });
 
 /**
- * Show and hide navigation on scroll.
+ * Shrink navigation on scroll past y = 0.
  */
-let previousScrollY = window.scrollY;
-window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
+const onScrollAddShrinkClass = () => {
   const navList = document.querySelector('.nav .list');
-  if (currentScrollY > previousScrollY) {
-    navList.classList.add('hide');
+  if (window.scrollY > 0) {
+    navList.classList.add('shrink');
   } else {
-    navList.classList.remove('hide');
+    navList.classList.remove('shrink');
   }
+};
 
-  previousScrollY = currentScrollY;
-});
+window.addEventListener('scroll', onScrollAddShrinkClass);
