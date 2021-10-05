@@ -10,7 +10,7 @@ html {
 
 .nav .list {
   align-items: center;
-  background-color: rgb(175, 78, 139, 0.9);
+  background-color: rgb(175, 78, 139, 0.80);
   display: flex;
   font-size: 1.2rem;
   list-style-type: circle;
@@ -19,14 +19,14 @@ html {
   margin: 0;
   position: fixed;
   padding: 0;
-  transition: height 100ms ease-out, box-shadow 100ms ease-out;
+  transition: height 150ms ease-out, box-shadow 150ms ease-out;
   width: 100%;
   z-index: 1;
 }
 
 .nav .list.shrink {
   box-shadow: 0 0 3px 1px #00000085;
-  height: 2.75rem;
+  height: 3rem;
 }
 
 .nav .item {
