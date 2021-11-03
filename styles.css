@@ -72,6 +72,7 @@ html {
 
 .page .header {
   background-color: white;
+  border: 2px black solid;
   border-radius: 1rem;
   font-family: 'Montserrat', serif;
   font-size: 3rem;
@@ -80,6 +81,7 @@ html {
 
 .page .text-block {
   background-color: white;
+  border: 2px black solid;
   border-radius: 1rem;
   font-family: 'Montserrat', sans-serif;
   margin: 0 3rem 1rem 3rem;
@@ -89,7 +91,7 @@ html {
 
 .profile-pic {
   background-color: white;
-  border: 2px white solid;
+  border: 2px black solid;
   border-radius: 1rem;
   width: 21rem;
   margin-bottom: 1rem;
@@ -98,6 +100,7 @@ html {
 .name {
   color: #258282;
   background-color: white;
+  border: 2px black solid;
   border-radius: 1rem;
   font-family: 'Courgette', serif;
   font-size: 7rem;
@@ -112,6 +115,7 @@ html {
 }
 
 .page .review-block .text-block {
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -119,6 +123,7 @@ html {
 .review-block {
   align-items: center;
   background-color: white;
+  border: 2px black solid;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -137,13 +142,14 @@ html {
 }
 
 .link > .book-cover {
+  border: 2px black solid;
   border-radius: 1rem;
   height: 12.29rem;
   width: 8rem;
 }
 
 .video {
-  border: 5px white solid;
+  border: 2px black solid;
   border-radius: 1rem;
 }
 
