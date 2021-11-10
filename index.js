@@ -31,4 +31,4 @@ const onScrollAddShrinkClass = () => {
   }
 };
 
-window.addEventListener('scroll', onScrollAddShrinkClass);
+window.addEventListener('scroll', onScrollAddShrinkClass, { passive: true });
