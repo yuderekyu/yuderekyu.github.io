@@ -1,17 +1,18 @@
 # yuderekyu.github.io
-My personal site!
+My personal site.
 
-## Local Development
+## Getting Started
+Want to creep around?
 
 Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their readme instructions.
 
 ### Installation
-Ensure node version v14 is installed:
+Install node v14:
 ```sh
 nvm install 14
 ```
 
-Ensure node v14 is used for this project:
+Use node v14:
 ```sh
 nvm use 14
 ```
