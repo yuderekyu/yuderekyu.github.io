@@ -10,7 +10,7 @@ html {
 
 .nav .list {
   align-items: center;
-  background-color: rgb(175, 78, 139, 0.80);
+  background-color: rgb(82 49 120 / 90%);
   display: flex;
   font-size: 1.2rem;
   list-style-type: circle;
