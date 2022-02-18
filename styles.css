@@ -3,57 +3,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url('./static/NHaasGroteskDSPro-55Rg.otf');
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Thin";
+  src: url('./static/NHaasGroteskDSPro-25Th.otf');
+}
+
 .body {
-  background-image: url('./static/kale-salad.jpg');
   margin: 0;
-}
-
-.nav .list {
-  align-items: center;
-  background-color: rgb(82 49 120 / 90%);
-  display: flex;
-  font-size: 1.2rem;
-  list-style-type: circle;
-  justify-content: center;
-  height: 3.5rem;
-  margin: 0;
-  position: fixed;
-  padding: 0;
-  transition: height 150ms ease-out, box-shadow 150ms ease-out;
-  width: 100%;
-  z-index: 1;
-}
-
-.nav .list.shrink {
-  box-shadow: 0 0 3px 1px #00000085;
-  height: 3rem;
-}
-
-.nav .item {
-  cursor: pointer;
-  list-style-type: none;
-  margin: 0.8rem;
-}
-
-.nav .link {
-  border-radius: 0;
-  color: white;
-  background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-}
-
-.nav .link:visited {
-  color: white;
 }
 
 .link {
   background-color: white;
   border-radius: 1rem;
   color: black;
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration: none;
+}
+
+.link:focus {
+  outline-color: purple;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -62,124 +35,44 @@ html {
   display: flex;
   flex-flow: column;
   height: 100vh;
-  margin-bottom: 2rem;
   opacity: 0;
-}
-
-.page.title{
+  transform: scale(0.90);
   justify-content: center;
 }
 
-.page .header {
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 1rem;
-  font-family: 'Montserrat', serif;
-  font-size: 3rem;
-  padding: 1.5rem
-}
-
 .page .text-block {
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 3rem 1rem 3rem;
-  padding: 1.75rem;
+  font-family: 'Neue Haas Grotesk Thin', sans-serif;
+  font-size: 2rem;
   max-width: 38rem;
-}
-
-.profile-pic {
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 1rem;
-  width: 21rem;
-  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .name {
-  color: #258282;
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 1rem;
-  font-family: 'Courgette', serif;
-  font-size: 7rem;
+  font-family: 'Neue Haas Grotesk', serif;
+  font-size: 4rem;
   margin: 0 1rem 1rem 1rem;
   padding: 2rem;
   text-align: center;
 }
 
-.page .review-block .text-block {
-  border: none;
-  margin: 0;
-  padding: 0;
+.name-emphasis {
+  color: purple;
+  font-size: 7rem;
 }
 
-.review-block {
-  align-items: center;
-  background-color: white;
-  border: 2px black solid;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
-  padding: 2rem;
-}
-
-.review-header {
-  font-size: 1.15rem;
-  margin: 0;
-}
-
-.link.book {
-  background-color: transparent;
-  padding: 0;
-}
-
-.link > .book-cover {
-  border: 2px black solid;
-  border-radius: 1rem;
-  height: 12.29rem;
-  width: 8rem;
-}
-
-.video {
-  border: 2px black solid;
-  border-radius: 1rem;
+.period-emphasis {
+  margin-left:0.25rem;
 }
 
 .animate {
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transform: scale(1);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
-
-@media screen and (max-width: 400px) {
-  .name {
-    font-size: 6rem;
-    padding: 1rem;
-  }
-
-  .profile-pic {
-    width: 16rem;
-  }
-
-  .page .text-block {
-    margin: 0 1rem 1rem 1rem;
-  }
-}
-
 
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
-  .nav .link:hover {
-    color: black;
-  }
-
   .link:hover {
-    color: #258282;
-  }
-
-  .link.book .book-cover:hover {
-    box-shadow: 1px 1px 8px 0 rgb(0 0 0 / 10%);
+    color: purple;
   }
 }
