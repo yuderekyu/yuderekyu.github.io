@@ -18,17 +18,3 @@ const animatePage = (observerCallback, observerOptions) => {
 };
 
 animatePage(callback, { threshold: 0.45 });
-
-/**
- * Shrink navigation on scroll past y = 0.
- */
-const onScrollAddShrinkClass = () => {
-  const navList = document.querySelector('.nav .list');
-  if (window.scrollY > 0) {
-    navList.classList.add('shrink');
-  } else {
-    navList.classList.remove('shrink');
-  }
-};
-
-window.addEventListener('scroll', onScrollAddShrinkClass, { passive: true });
