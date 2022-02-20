@@ -84,6 +84,11 @@ html {
   outline-offset: 2px;
 }
 
+/* Prevent focus outline from activating after click: https://css-tricks.com/the-focus-visible-trick/ */
+.link:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .link:hover {
