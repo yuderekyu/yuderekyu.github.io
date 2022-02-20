@@ -1,5 +1,6 @@
 /* Styles follow dom element order. */
 html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -14,19 +15,12 @@ html {
 }
 
 .body {
+  height: 100%;
   margin: 0;
 }
 
-.link {
-  background-color: white;
-  border-radius: 1rem;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.link:focus {
-  outline-color: purple;
+.main {
+  height: 100%;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -34,16 +28,30 @@ html {
   align-items: center;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 100%;
   opacity: 0;
   transform: scale(0.90);
   justify-content: center;
 }
 
+.animate {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.top-space {
+  flex-grow: 1;
+}
+
+.bottom-space {
+  flex-grow: 2;
+}
+
 .page .text-block {
   font-family: 'Neue Haas Grotesk Thin', sans-serif;
-  font-size: 2rem;
-  margin: 1rem 2rem;
+  font-size: 1.5rem;
+  margin: 0 2rem;
   max-width: 38rem;
   text-align: center;
 }
@@ -51,8 +59,7 @@ html {
 .name {
   font-family: 'Neue Haas Grotesk', serif;
   font-size: 4rem;
-  margin: 0 1rem 1rem 1rem;
-  padding: 2rem;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -62,13 +69,19 @@ html {
 }
 
 .period-emphasis {
-  margin-left:0.25rem;
+  margin-left: 0.25rem;
 }
 
-.animate {
-  opacity: 1;
-  transform: scale(1);
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+.link {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:focus {
+  outline: purple dashed 3px;
+  outline-offset: 2px;
 }
 
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
