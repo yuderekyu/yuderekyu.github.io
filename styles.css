@@ -6,12 +6,12 @@ html {
 
 @font-face {
   font-family: "Neue Haas Grotesk";
-  src: url('./static/NHaasGroteskDSPro-55Rg.otf');
+  src: url('./static/NHaasGroteskDSPro-55Rg.otf') format('opentype');
 }
 
 @font-face {
   font-family: "Neue Haas Grotesk Thin";
-  src: url('./static/NHaasGroteskDSPro-25Th.otf');
+  src: url('./static/NHaasGroteskDSPro-25Th.otf') format('opentype');
 }
 
 .body {
@@ -64,8 +64,30 @@ html {
 }
 
 .name-emphasis {
-  color: purple;
+  animation: vilebloom 20s infinite;
   font-size: 7rem;
+}
+
+@keyframes vilebloom {
+  0%, 100% {
+    color: #3D3F85;
+  }
+
+  20 % {
+    color: #472466;
+  }
+
+  40% {
+    color: #D94A66;
+  }
+
+  60% {
+    color: #F0BD56;
+  }
+
+  80% {
+    color: #FAD975;
+  }
 }
 
 .period-emphasis {
@@ -73,7 +95,6 @@ html {
 }
 
 .link {
-  background-color: white;
   color: black;
   font-weight: bold;
   text-decoration: none;
