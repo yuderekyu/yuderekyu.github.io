@@ -64,28 +64,25 @@ html {
 }
 
 .name-emphasis {
-  animation: vilebloom 20s infinite;
+  animation: vilebloom 12s 1;
+  color: purple;
   font-size: 7rem;
 }
 
 @keyframes vilebloom {
-  0%, 100% {
-    color: #3D3F85;
+  0, 100% {
+    color: purple;
   }
 
-  20 % {
-    color: #472466;
-  }
-
-  40% {
+  25% {
     color: #D94A66;
   }
 
-  60% {
+  50% {
     color: #F0BD56;
   }
 
-  80% {
+  75% {
     color: #FAD975;
   }
 }
@@ -95,13 +92,13 @@ html {
 }
 
 .link {
-  color: black;
+  color: #D94A66;
   font-weight: bold;
   text-decoration: none;
 }
 
 .link:focus {
-  outline: purple dashed 3px;
+  outline:purple dashed 3px;
   outline-offset: 2px;
 }
 
@@ -113,6 +110,7 @@ html {
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .link:hover {
-    color: purple;
+    color: #F0BD56;
+    font-weight: bold;
   }
 }
