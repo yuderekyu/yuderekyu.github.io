@@ -98,7 +98,7 @@ html {
 }
 
 .link:focus {
-  outline:purple dashed 3px;
+  outline: purple dashed 3px;
   outline-offset: 2px;
 }
 
