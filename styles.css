@@ -4,14 +4,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
+  font-display: swap;
   font-family: "Neue Haas Grotesk";
-  src: url('./static/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  src: url('./static/NHaasGroteskDSPro-55Rg.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+/* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
+  font-display: swap;
   font-family: "Neue Haas Grotesk Thin";
-  src: url('./static/NHaasGroteskDSPro-25Th.otf') format('opentype');
+  src: url('./static/NHaasGroteskDSPro-25Th.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 .body {
@@ -64,26 +68,22 @@ html {
 }
 
 .name-emphasis {
-  animation: vilebloom 12s 1;
+  animation: vilebloom 5s 1;
   color: purple;
   font-size: 7rem;
 }
 
 @keyframes vilebloom {
-  0, 100% {
+  66% {
     color: purple;
   }
 
-  25% {
+  33% {
     color: #D94A66;
   }
 
-  50% {
+  0% {
     color: #F0BD56;
-  }
-
-  75% {
-    color: #FAD975;
   }
 }
 
