@@ -4,14 +4,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
+  font-display: swap;
   font-family: "Neue Haas Grotesk";
-  src: url('./static/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  src: url('./static/NHaasGroteskDSPro-55Rg.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+/* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
+  font-display: swap;
   font-family: "Neue Haas Grotesk Thin";
-  src: url('./static/NHaasGroteskDSPro-25Th.otf') format('opentype');
+  src: url('./static/NHaasGroteskDSPro-25Th.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
 .body {
