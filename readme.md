@@ -2,9 +2,7 @@
 My personal site.
 
 ## Getting Started
-Want to creep around?
-
-Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their readme instructions.
+Want to creep around? Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their instructions.
 
 ### Installation
 Install node v14:
