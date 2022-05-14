@@ -1,7 +1,7 @@
 /* Styles follow dom element order. */
 .dark {
   --main-bg-color: hsl(210,8%,20%);
-  --font-color: white;
+  --font-color: #fafafa;
   --font-color-emphasis: #BA7CF7;
 }
 
@@ -31,7 +31,7 @@ html {
 
 .main {
   height: 100%;
-  background-color: var(--main-bg-color, white);
+  background-color: var(--main-bg-color, #fafafa);
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -56,7 +56,11 @@ html {
 }
 
 .bottom-space {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   flex-grow: 2;
+  width: 100%;
 }
 
 .page .text-block {
@@ -84,7 +88,7 @@ html {
 
 @keyframes vilebloom {
   66% {
-    color: purple;
+    color: var(--font-color--emphasis, purple);
   }
 
   33% {
@@ -107,7 +111,7 @@ html {
 }
 
 .link:focus {
-  outline: purple dashed 3px;
+  outline: var(--font-color-emphasis) dashed 3px;
   outline-offset: 2px;
 }
 
@@ -122,4 +126,18 @@ html {
     color: #F0BD56;
     font-weight: bold;
   }
+}
+
+.theme-toggle{
+  align-items: center;
+  color: var(--font-color);
+  display: flex;
+  font-family: "Neue Haas Grotesk Thin";
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.theme-toggle-input {
+  margin: 0 0 0 5px;
+  padding: 0;
 }
