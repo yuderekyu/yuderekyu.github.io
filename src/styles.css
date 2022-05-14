@@ -123,3 +123,49 @@ html {
     font-weight: bold;
   }
 }
+
+.toggles [type="checkbox"] {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+.toggles [type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding: 0.5em;
+  padding-left: 4em;
+  max-width: calc(100% - 2em);
+}
+.toggles [type="checkbox"] + label::before,
+.toggles [type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  height: 1.5em;
+  transition: all 0.25s ease;
+}
+.toggles [type="checkbox"] + label::before {
+  left: 0;
+  top: 0.2em;
+  width: 3em;
+  border: 0.2em solid #767676;
+  background: #767676;
+  border-radius: 1.1em;
+}
+.toggles [type="checkbox"] + label::after {
+  left: 0;
+  top: 0.25em;
+  background-color: #fff;
+  background-position: center center;
+  border-radius: 50%;
+  width: 1.5em;
+  border: 0.15em solid #767676;
+}
+.toggles [type="checkbox"]:checked + label::after {
+  left: 1.6em;
+  border-color: #36a829;
+  color: #36a829;
+}
