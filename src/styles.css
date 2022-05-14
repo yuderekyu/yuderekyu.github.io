@@ -88,7 +88,7 @@ html {
 
 @keyframes vilebloom {
   66% {
-    color: var(--font-color--emphasis, purple);
+    color: var(--font-color-emphasis, purple);
   }
 
   33% {

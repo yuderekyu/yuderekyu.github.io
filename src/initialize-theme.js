@@ -34,11 +34,11 @@ const handleThemeChange = () => {
 const initializeTheme = () => {
   const themeToggleInput = document.querySelector('input[name="theme-toggle-input"]');
   const currentTheme = getTheme();
+  applyTheme(currentTheme);
   if (currentTheme === 'dark') {
     themeToggleInput.defaultChecked = true;
   }
 
-  applyTheme(currentTheme);
   themeToggleInput.addEventListener("click", handleThemeChange);
 };
 
