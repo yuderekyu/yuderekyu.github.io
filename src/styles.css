@@ -1,7 +1,7 @@
 /* Styles follow dom element order. */
 .dark {
   --main-bg-color: hsl(210,8%,20%);
-  --font-color: white;
+  --font-color: #fafafa;
   --font-color-emphasis: #BA7CF7;
 }
 
@@ -31,7 +31,7 @@ html {
 
 .main {
   height: 100%;
-  background-color: var(--main-bg-color, white);
+  background-color: var(--main-bg-color, #fafafa);
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -56,7 +56,11 @@ html {
 }
 
 .bottom-space {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   flex-grow: 2;
+  width: 100%;
 }
 
 .page .text-block {
@@ -84,7 +88,7 @@ html {
 
 @keyframes vilebloom {
   66% {
-    color: purple;
+    color: var(--font-color--emphasis, purple);
   }
 
   33% {
@@ -107,7 +111,7 @@ html {
 }
 
 .link:focus {
-  outline: purple dashed 3px;
+  outline: var(--font-color-emphasis) dashed 3px;
   outline-offset: 2px;
 }
 
@@ -124,48 +128,16 @@ html {
   }
 }
 
-.toggles [type="checkbox"] {
-  position: absolute;
-  top: auto;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
+.theme-toggle{
+  align-items: center;
+  color: var(--font-color);
+  display: flex;
+  font-family: "Neue Haas Grotesk Thin";
+  font-size: 1rem;
+  margin-top: 1rem;
 }
-.toggles [type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding: 0.5em;
-  padding-left: 4em;
-  max-width: calc(100% - 2em);
-}
-.toggles [type="checkbox"] + label::before,
-.toggles [type="checkbox"] + label::after {
-  content: "";
-  position: absolute;
-  height: 1.5em;
-  transition: all 0.25s ease;
-}
-.toggles [type="checkbox"] + label::before {
-  left: 0;
-  top: 0.2em;
-  width: 3em;
-  border: 0.2em solid #767676;
-  background: #767676;
-  border-radius: 1.1em;
-}
-.toggles [type="checkbox"] + label::after {
-  left: 0;
-  top: 0.25em;
-  background-color: #fff;
-  background-position: center center;
-  border-radius: 50%;
-  width: 1.5em;
-  border: 0.15em solid #767676;
-}
-.toggles [type="checkbox"]:checked + label::after {
-  left: 1.6em;
-  border-color: #36a829;
-  color: #36a829;
+
+.theme-toggle-input {
+  margin: 0 0 0 5px;
+  padding: 0;
 }
