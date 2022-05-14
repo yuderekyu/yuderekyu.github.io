@@ -31,7 +31,7 @@ html {
 
 .main {
   height: 100%;
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color, white);
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -60,7 +60,7 @@ html {
 }
 
 .page .text-block {
-  color: var(--font-color);
+  color: var(--font-color, black);
   font-family: 'Neue Haas Grotesk Thin', sans-serif;
   font-size: 1.5rem;
   margin: 0 2rem;
@@ -69,7 +69,7 @@ html {
 }
 
 .name {
-  color: var(--font-color);
+  color: var(--font-color, black);
   font-family: 'Neue Haas Grotesk', serif;
   font-size: 4rem;
   margin: 1rem 0;
