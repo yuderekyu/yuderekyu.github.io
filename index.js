@@ -19,4 +19,19 @@ window.onload = () => {
   };
 
   animatePage(callback, { threshold: 0.45 });
+
+  const themeKey = 'yuderekyu.github.io.theme';
+  const handleThemeSwitch = () => {
+    const mainElement = document.querySelector('.main');
+    console.log("mainElement = ", mainElement);
+    mainElement.classList.add('dark');
+    window.localStorage.setItem(themeKey, 'dark');
+  };
+
+  handleThemeSwitch();
+  const checkTheme = () => {
+    const theme = window.localStorage.getItem(themeKey);
+    console.log("theme = ", theme);
+  };
+  checkTheme();
 };
