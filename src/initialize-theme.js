@@ -1,8 +1,9 @@
 const STORAGE_THEME_KEY = 'yuderekyu.github.io.theme';
 const DARK_THEME = 'dark';
 
-const getTheme = () => {
-  return window.localStorage.getItem(STORAGE_THEME_KEY);
+const removeTheme = (currentTheme) => {
+  const mainElement = document.querySelector('.main');
+  mainElement.classList.remove(currentTheme);
 };
 
 const applyTheme = (currentTheme) => {
@@ -10,9 +11,8 @@ const applyTheme = (currentTheme) => {
   mainElement.classList.add(currentTheme);
 };
 
-const removeTheme = (currentTheme) => {
-  const mainElement = document.querySelector('.main');
-  mainElement.classList.remove(currentTheme);
+const getTheme = () => {
+  return window.localStorage.getItem(STORAGE_THEME_KEY);
 };
 
 /**
