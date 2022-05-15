@@ -2,9 +2,9 @@
 My personal site.
 
 ## Getting Started
-Want to creep? Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their instructions before moving to the next section.
+Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their instructions before moving to the next section.
 
-### Project Installation
+### Installation
 1. Install the correct node version:
 ```sh
 nvm install
@@ -20,7 +20,7 @@ nvm use
 npm install
 ```
 
-### Development Steps
+### Development
 1. Start the server. Note, this defaults to port 3000 - use the `PORT` environment variable to specify a specific port.
 ```sh
 npm start
