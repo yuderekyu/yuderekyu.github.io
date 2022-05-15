@@ -132,7 +132,6 @@ html {
 
 .theme-toggle{
   align-items: center;
-  color: var(--main-font-color);
   display: flex;
   font-family: "Neue Haas Grotesk Thin";
   font-size: 1rem;
