@@ -1,8 +1,11 @@
 /* Styles follow dom element order. */
 .dark {
   --main-bg-color: hsl(210,8%,20%);
-  --font-color: #fafafa;
-  --font-color-emphasis: #BA7CF7;
+  --main-font-color: #FAFAFA;
+  --name-font-color: #CE7CCE;
+  --link-font-color: #F0BD56;
+  --link-font-color-hover: #B473B4;
+  --link-focus-color: #FAFAFA;
 }
 
 html {
@@ -30,8 +33,9 @@ html {
 }
 
 .main {
-  height: 100%;
   background-color: var(--main-bg-color, #fafafa);
+  color: var(--main-font-color, black);
+  height: 100%;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -64,7 +68,6 @@ html {
 }
 
 .page .text-block {
-  color: var(--font-color, black);
   font-family: 'Neue Haas Grotesk Thin', sans-serif;
   font-size: 1.5rem;
   margin: 0 2rem;
@@ -73,7 +76,6 @@ html {
 }
 
 .name {
-  color: var(--font-color, black);
   font-family: 'Neue Haas Grotesk', serif;
   font-size: 4rem;
   margin: 1rem 0;
@@ -82,13 +84,13 @@ html {
 
 .name-emphasis {
   animation: vilebloom 5s 1;
-  color: var(--font-color-emphasis, purple);
+  color: var(--name-font-color, purple);
   font-size: 7rem;
 }
 
 @keyframes vilebloom {
   66% {
-    color: var(--font-color-emphasis, purple);
+    color: var(--name-font-color, purple);
   }
 
   33% {
@@ -101,17 +103,17 @@ html {
 }
 
 .period-emphasis {
-  margin-left: 0.25rem;
+  margin-left: 0.35rem;
 }
 
 .link {
-  color: #D94A66;
+  color: var(--link-font-color, #D94A66);
   font-weight: bold;
   text-decoration: none;
 }
 
 .link:focus {
-  outline: var(--font-color-emphasis) dashed 3px;
+  outline: var(--link-focus-color, purple) dashed 3px;
   outline-offset: 2px;
 }
 
@@ -123,14 +125,13 @@ html {
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .link:hover {
-    color: #F0BD56;
+    color: var(--link-font-color-hover, #F0BD56);
     font-weight: bold;
   }
 }
 
 .theme-toggle{
   align-items: center;
-  color: var(--font-color);
   display: flex;
   font-family: "Neue Haas Grotesk Thin";
   font-size: 1rem;
