@@ -1,7 +1,8 @@
-const THEME_KEY = 'yuderekyu.github.io.theme';
+const STORAGE_THEME_KEY = 'yuderekyu.github.io.theme';
+const DARK_THEME = 'dark';
 
 const getTheme = () => {
-  return window.localStorage.getItem(THEME_KEY);
+  return window.localStorage.getItem(STORAGE_THEME_KEY);
 };
 
 const applyTheme = (currentTheme) => {
@@ -9,7 +10,7 @@ const applyTheme = (currentTheme) => {
   mainElement.classList.add(currentTheme);
 };
 
-const removeTheme = (currentTheme, element) => {
+const removeTheme = (currentTheme) => {
   const mainElement = document.querySelector('.main');
   mainElement.classList.remove(currentTheme);
 };
@@ -19,12 +20,12 @@ const removeTheme = (currentTheme, element) => {
  */
 const handleThemeChange = () => {
   const currentTheme = getTheme();
-  if (currentTheme === 'dark') {
-    window.localStorage.removeItem(THEME_KEY);
-    removeTheme('dark');
+  if (currentTheme === DARK_THEME) {
+    window.localStorage.removeItem(STORAGE_THEME_KEY);
+    removeTheme(DARK_THEME);
   } else {
-    window.localStorage.setItem(THEME_KEY, 'dark');
-    applyTheme('dark');
+    window.localStorage.setItem(STORAGE_THEME_KEY, DARK_THEME);
+    applyTheme(DARK_THEME);
   }
 };
 
@@ -35,7 +36,7 @@ const initializeTheme = () => {
   const themeToggleInput = document.querySelector('input[name="theme-toggle-input"]');
   const currentTheme = getTheme();
   applyTheme(currentTheme);
-  if (currentTheme === 'dark') {
+  if (currentTheme === DARK_THEME) {
     themeToggleInput.defaultChecked = true;
   }
 
