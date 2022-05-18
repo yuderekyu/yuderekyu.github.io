@@ -2,7 +2,7 @@
 My personal site.
 
 ## Getting Started
-Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their instructions before moving to the next section.
+Ensure you have node version manager ([nvm](https://github.com/nvm-sh/nvm)) installed. If not, follow their instructions before moving on.
 
 ### Installation
 1. Install the correct node version:
@@ -21,12 +21,12 @@ npm install
 ```
 
 ### Development
-1. Start the server. Note, this defaults to port 3000 - use the `PORT` environment variable to specify a specific port.
+1. Start the server. Note, this defaults to port 3000 -- use the `PORT` environment variable to specify a different port.
 ```sh
 npm start
 ```
 
-2. Navigate to localhost on your browser. 
+2. Navigate to localhost on your browser. You're in!
 ```
 http://localhost:3000/
 ```
