@@ -26,7 +26,8 @@ npm install
 npm start
 ```
 
-2. Navigate to localhost on your browser. You're in!
+2. Navigate to localhost on your browser.
 ```
 http://localhost:3000/
 ```
+You're in!
