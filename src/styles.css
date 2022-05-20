@@ -36,6 +36,7 @@ html {
   background-color: var(--main-bg-color, #fafafa);
   color: var(--main-font-color, black);
   height: 100%;
+  transition: all .15s ease-out;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
