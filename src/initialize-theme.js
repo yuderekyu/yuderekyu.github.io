@@ -1,31 +1,33 @@
 const STORAGE_THEME_KEY = 'yuderekyu.github.io.theme';
 const DARK_THEME = 'dark';
 
+const removeTheme = ({ theme, element }) => {
+  element.classList.remove(theme);
+};
+
+const applyTheme = ({ theme, element }) => {
+  element.classList.add(theme);
+};
+
 const getTheme = () => {
   return window.localStorage.getItem(STORAGE_THEME_KEY);
-};
-
-const applyTheme = (currentTheme) => {
-  const mainElement = document.querySelector('.main');
-  mainElement.classList.add(currentTheme);
-};
-
-const removeTheme = (currentTheme) => {
-  const mainElement = document.querySelector('.main');
-  mainElement.classList.remove(currentTheme);
 };
 
 /**
  * Removes or adds dark mode to local storage and the dom.
  */
 const handleThemeChange = () => {
-  const currentTheme = getTheme();
-  if (currentTheme === DARK_THEME) {
+  const themeOptions = {
+    theme: DARK_THEME,
+    element: document.querySelector('.main')
+  };
+
+  if (getTheme() === DARK_THEME) {
     window.localStorage.removeItem(STORAGE_THEME_KEY);
-    removeTheme(DARK_THEME);
+    removeTheme(themeOptions);
   } else {
     window.localStorage.setItem(STORAGE_THEME_KEY, DARK_THEME);
-    applyTheme(DARK_THEME);
+    applyTheme(themeOptions);
   }
 };
 
@@ -35,8 +37,13 @@ const handleThemeChange = () => {
 const initializeTheme = () => {
   const themeToggleInput = document.querySelector('input[name="theme-toggle-input"]');
   themeToggleInput.addEventListener("click", handleThemeChange);
+
   const currentTheme = getTheme();
-  applyTheme(currentTheme);
+  applyTheme({
+    theme: currentTheme,
+    element: document.querySelector('.main')
+  });
+
   if (currentTheme === DARK_THEME) {
     themeToggleInput.defaultChecked = true;
   }
