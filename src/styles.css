@@ -84,7 +84,7 @@ html {
 }
 
 .name-emphasis {
-  animation: vilebloom 5s 1;
+  animation: vilebloom 6s 1;
   color: var(--name-font-color, purple);
   font-size: 7rem;
 }
