@@ -1,5 +1,5 @@
 const STORAGE_THEME_KEY = 'yuderekyu.github.io.theme';
-const DARK_THEME = 'dark';
+const LIGHT_THEME = 'light';
 
 const removeTheme = ({ theme, element }) => {
   element.classList.remove(theme);
@@ -18,15 +18,15 @@ const getTheme = () => {
  */
 const handleThemeChange = () => {
   const themeOptions = {
-    theme: DARK_THEME,
+    theme: LIGHT_THEME,
     element: document.querySelector('.main')
   };
 
-  if (getTheme() === DARK_THEME) {
+  if (getTheme() === LIGHT_THEME) {
     window.localStorage.removeItem(STORAGE_THEME_KEY);
     removeTheme(themeOptions);
   } else {
-    window.localStorage.setItem(STORAGE_THEME_KEY, DARK_THEME);
+    window.localStorage.setItem(STORAGE_THEME_KEY, LIGHT_THEME);
     applyTheme(themeOptions);
   }
 };
@@ -44,7 +44,7 @@ const initializeTheme = () => {
     element: document.querySelector('.main')
   });
 
-  if (currentTheme === DARK_THEME) {
+  if (currentTheme === LIGHT_THEME) {
     themeToggleInput.defaultChecked = true;
   }
 };
