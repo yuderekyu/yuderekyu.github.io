@@ -2,6 +2,9 @@
   --main-bg-color: hsl(210,8%,20%);
   --main-font-color: #D9D6D6;
   --name-font-color: #CE7CCE;
+  --vile-bloom-color-3: #CE7CCE;
+  --vile-bloom-color-2: #B8465B;
+  --vile-bloom-color-1: #C4963A;
   --link-font-color: #F0BD56;
   --link-font-color-hover: #B473B4;
   --link-focus-color: #B473B4;
@@ -11,6 +14,9 @@
   --main-bg-color: #FAFAFA;
   --main-font-color: black;
   --name-font-color: purple;
+  --vile-bloom-color-3: purple;
+  --vile-bloom-color-2: #D94A66;
+  --vile-bloom-color-1: #F0BD56;
   --link-font-color: #D94A66;
   --link-font-color-hover: #F0BD56;
   --link-focus-color: purple;
@@ -99,15 +105,15 @@ html {
 
 @keyframes vilebloom {
   66% {
-    color: var(--name-font-color);
+    color: var(--vile-bloom-color-3);
   }
 
   33% {
-    color: #D94A66;
+    color: var(--vile-bloom-color-2) ;
   }
 
   0% {
-    color: #F0BD56;
+    color: var(--vile-bloom-color-1);
   }
 }
 
