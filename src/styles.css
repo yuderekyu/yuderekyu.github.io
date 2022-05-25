@@ -1,10 +1,10 @@
 .dark {
   --main-bg-color: hsl(210,8%,20%);
-  --main-font-color: #FAFAFA;
+  --main-font-color: #D9D6D6;
   --name-font-color: #CE7CCE;
   --link-font-color: #F0BD56;
   --link-font-color-hover: #B473B4;
-  --link-focus-color: #FAFAFA;
+  --link-focus-color: #B473B4;
 }
 
 .light {
