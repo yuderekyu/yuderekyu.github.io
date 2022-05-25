@@ -134,7 +134,7 @@ html {
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .link:hover {
-    color: var(--link-font-color-hover) ;
+    color: var(--link-font-color-hover);
     font-weight: bold;
   }
 }
