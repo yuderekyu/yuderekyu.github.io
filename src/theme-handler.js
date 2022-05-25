@@ -15,7 +15,7 @@ const getTheme = () => {
 };
 
 /**
- * Removes or adds dark mode to local storage and the dom.
+ * Swaps between light and dark themes.
  */
 const handleThemeChange = () => {
   const { documentElement } = document;
@@ -46,9 +46,9 @@ const handleThemeChange = () => {
 };
 
 /**
- * Ensures the saved theme is applied to the dom and attaches an event handler to the theme toggle.
+ * Attaches the theme event handler to the toggle element.
  */
-const initializeTheme = () => {
+const setupThemeHandler = () => {
   const themeToggleInput = document.querySelector('input[name="theme-toggle-input"]');
   themeToggleInput.addEventListener("click", handleThemeChange);
 
@@ -58,4 +58,4 @@ const initializeTheme = () => {
   }
 };
 
-export default initializeTheme;
+export default setupThemeHandler;
