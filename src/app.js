@@ -1,7 +1,7 @@
 import animatePage from '/src/animate-page.js';
-import initializeTheme from '/src/initialize-theme.js';
+import setupThemeHandler from '/src/theme-handler.js';
 
 window.onload = () => {
-  initializeTheme();
+  setupThemeHandler();
   animatePage({ threshold: 0.45 });
 };

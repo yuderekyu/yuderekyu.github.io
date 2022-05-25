@@ -1,11 +1,10 @@
-/* @TODO: Swap via classes rather than default values. */
 .dark {
   --main-bg-color: hsl(210,8%,20%);
-  --main-font-color: #FAFAFA;
+  --main-font-color: #D9D6D6;
   --name-font-color: #CE7CCE;
   --link-font-color: #F0BD56;
   --link-font-color-hover: #B473B4;
-  --link-focus-color: #FAFAFA;
+  --link-focus-color: #B473B4;
 }
 
 .light {
@@ -18,8 +17,11 @@
 }
 
 html {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
   height: 100%;
   scroll-behavior: smooth;
+  transition: all .15s ease-out;
 }
 
 /* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
@@ -42,10 +44,7 @@ html {
 }
 
 .main {
-  background-color: var(--main-bg-color, hsl(210,8%,20%));
-  color: var(--main-font-color, #FAFAFA);
   height: 100%;
-  transition: all .15s ease-out;
 }
 
 /* Note: opacity < 1 creates a new stacking context. */
@@ -94,13 +93,13 @@ html {
 
 .name-emphasis {
   animation: vilebloom 6s 1;
-  color: var(--name-font-color,#CE7CCE);
+  color: var(--name-font-color);
   font-size: 7rem;
 }
 
 @keyframes vilebloom {
   66% {
-    color: var(--name-font-color,#CE7CCE);
+    color: var(--name-font-color);
   }
 
   33% {
@@ -117,13 +116,13 @@ html {
 }
 
 .link {
-  color: var(--link-font-color, #F0BD56);
+  color: var(--link-font-color);
   font-weight: bold;
   text-decoration: none;
 }
 
 .link:focus {
-  outline: var(--link-focus-color, #FAFAFA) dashed 3px;
+  outline: var(--link-focus-color) dashed 3px;
   outline-offset: 2px;
 }
 
@@ -135,7 +134,7 @@ html {
 /* Mobile devices do not support hovering. Use the hover media query to only apply hover styles for non-mobile devices. */
 @media (hover: hover) {
   .link:hover {
-    color: var(--link-font-color-hover, #B473B4);
+    color: var(--link-font-color-hover) ;
     font-weight: bold;
   }
 }
