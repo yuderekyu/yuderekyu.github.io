@@ -123,8 +123,21 @@ html {
 
 .link {
   color: var(--link-font-color);
+  display: inline-block;
   font-weight: bold;
+  position: relative;
   text-decoration: none;
+}
+
+.link::after {
+  background-color: var(--link-font-color);
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+  width: 100%;
 }
 
 .link:focus {
@@ -142,6 +155,11 @@ html {
   .link:hover {
     color: var(--link-font-color-hover);
     font-weight: bold;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
 
