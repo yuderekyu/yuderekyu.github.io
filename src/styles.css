@@ -136,6 +136,7 @@ html {
   height: 2px;
   position: absolute;
   transform: scaleX(0);
+  transform-origin: bottom left;
   transition: transform 0.25s ease-out;
   width: 100%;
 }
