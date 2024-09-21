@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/yuderekyu/yuderekyu.github.io#readme",
   "devDependencies": {
-    "express": "^4.19.2"
+    "express": "^4.21.0"
   }
 }
