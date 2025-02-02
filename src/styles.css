@@ -84,13 +84,14 @@ html {
 
 .page .text-block {
   font-family: 'Neue Haas Grotesk Thin', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 2rem;
-  max-width: 38rem;
+  max-width: 30rem;
   text-align: center;
 }
 
 .name {
+  line-height: 0.9;
   font-family: 'Neue Haas Grotesk', serif;
   font-size: 4rem;
   margin: 1rem 0;
