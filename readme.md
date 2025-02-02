@@ -34,13 +34,11 @@ npm install
 npm start
 ```
 
-2. Navigate to localhost on your browser.
+2. Navigate to localhost on your browser to view the site.
 
 ```
 http://localhost:3000/
 ```
-
-You're in!
 
 3. To format files, run the following command:
 
