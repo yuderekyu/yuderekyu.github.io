@@ -1,24 +1,24 @@
 .dark {
-  --main-bg-color: hsl(210,8%,20%);
-  --main-font-color: #D9D6D6;
-  --name-font-color: #CE7CCE;
-  --vile-bloom-color-3: #CE7CCE;
-  --vile-bloom-color-2: #B8465B;
-  --vile-bloom-color-1: #C4963A;
-  --link-font-color: #F0BD56;
-  --link-font-color-hover: #B473B4;
-  --link-focus-color: #B473B4;
+  --main-bg-color: hsl(210, 8%, 20%);
+  --main-font-color: #d9d6d6;
+  --name-font-color: #ce7cce;
+  --vile-bloom-color-3: #ce7cce;
+  --vile-bloom-color-2: #b8465b;
+  --vile-bloom-color-1: #c4963a;
+  --link-font-color: #f0bd56;
+  --link-font-color-hover: #b473b4;
+  --link-focus-color: #b473b4;
 }
 
 .light {
-  --main-bg-color: #FAFAFA;
+  --main-bg-color: #fafafa;
   --main-font-color: black;
   --name-font-color: purple;
   --vile-bloom-color-3: purple;
-  --vile-bloom-color-2: #D94A66;
-  --vile-bloom-color-1: #F0BD56;
-  --link-font-color: #D94A66;
-  --link-font-color-hover: #F0BD56;
+  --vile-bloom-color-2: #d94a66;
+  --vile-bloom-color-1: #f0bd56;
+  --link-font-color: #d94a66;
+  --link-font-color-hover: #f0bd56;
   --link-focus-color: purple;
 }
 
@@ -27,21 +27,39 @@ html {
   color: var(--main-font-color);
   height: 100%;
   scroll-behavior: smooth;
-  transition: all .15s ease-out;
+  transition: all 0.15s ease-out;
 }
 
 /* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
   font-display: swap;
   font-family: "Neue Haas Grotesk";
-  src: url('/static/NHaasGroteskDSPro-55Rg.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  src:
+    url("/static/NHaasGroteskDSPro-55Rg.otf") format("opentype"),
+    local(".SFNSText-Light"),
+    local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"),
+    local("Ubuntu Light"),
+    local("Segoe UI Light"),
+    local("Roboto-Light"),
+    local("DroidSans"),
+    local("Tahoma");
 }
 
 /* Note: the list of fonts, starting from the 2nd position, are system fonts used fallbacks while the first front loads. */
 @font-face {
   font-display: swap;
   font-family: "Neue Haas Grotesk Thin";
-  src: url('/static/NHaasGroteskDSPro-25Th.otf') format('opentype'), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  src:
+    url("/static/NHaasGroteskDSPro-25Th.otf") format("opentype"),
+    local(".SFNSText-Light"),
+    local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"),
+    local("Ubuntu Light"),
+    local("Segoe UI Light"),
+    local("Roboto-Light"),
+    local("DroidSans"),
+    local("Tahoma");
 }
 
 .body {
@@ -60,14 +78,16 @@ html {
   flex-flow: column;
   height: 100%;
   opacity: 0;
-  transform: scale(0.90);
+  transform: scale(0.9);
   justify-content: center;
 }
 
 .animate {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out;
 }
 
 .top-space {
@@ -83,7 +103,7 @@ html {
 }
 
 .page .text-block {
-  font-family: 'Neue Haas Grotesk Thin', sans-serif;
+  font-family: "Neue Haas Grotesk Thin", sans-serif;
   font-size: 1.3rem;
   margin: 0 2rem;
   max-width: 30rem;
@@ -92,7 +112,7 @@ html {
 
 .name {
   line-height: 0.9;
-  font-family: 'Neue Haas Grotesk', serif;
+  font-family: "Neue Haas Grotesk", serif;
   font-size: 4rem;
   margin: 1rem 0;
   text-align: center;
@@ -110,7 +130,7 @@ html {
   }
 
   33% {
-    color: var(--vile-bloom-color-2) ;
+    color: var(--vile-bloom-color-2);
   }
 
   0% {
@@ -119,7 +139,7 @@ html {
 }
 
 .period-emphasis {
-  margin-left: 0.30rem;
+  margin-left: 0.3rem;
 }
 
 .link {
@@ -132,7 +152,7 @@ html {
 
 .link::after {
   background-color: var(--link-font-color);
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   position: absolute;

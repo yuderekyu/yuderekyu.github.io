@@ -1,6 +1,6 @@
-const STORAGE_THEME_KEY = 'yuderekyu.github.io.theme';
-const LIGHT_THEME = 'light';
-const DARK_THEME = 'dark';
+const STORAGE_THEME_KEY = "yuderekyu.github.io.theme";
+const LIGHT_THEME = "light";
+const DARK_THEME = "dark";
 
 const removeTheme = ({ theme, element }) => {
   element.classList.remove(theme);
@@ -24,23 +24,23 @@ const handleThemeChange = () => {
 
     removeTheme({
       theme: LIGHT_THEME,
-      element: documentElement
+      element: documentElement,
     });
 
     applyTheme({
       theme: DARK_THEME,
-      element: documentElement
+      element: documentElement,
     });
   } else {
     window.localStorage.setItem(STORAGE_THEME_KEY, LIGHT_THEME);
     removeTheme({
       theme: DARK_THEME,
-      element: documentElement
+      element: documentElement,
     });
 
     applyTheme({
       theme: LIGHT_THEME,
-      element: documentElement
+      element: documentElement,
     });
   }
 };
@@ -49,7 +49,9 @@ const handleThemeChange = () => {
  * Attaches the theme event handler to the toggle element.
  */
 const setupThemeHandler = () => {
-  const themeToggleInput = document.querySelector('input[name="theme-toggle-input"]');
+  const themeToggleInput = document.querySelector(
+    'input[name="theme-toggle-input"]',
+  );
   themeToggleInput.addEventListener("click", handleThemeChange);
 
   const currentTheme = getTheme();
