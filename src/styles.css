@@ -163,7 +163,7 @@ html {
 }
 
 .link:focus {
-  outline: var(--link-focus-color) dashed 3px;
+  outline: var(--link-focus-color) dashed 2px;
   outline-offset: 2px;
 }
 
